@@ -15,10 +15,15 @@ function App() {
       const response = await fetch(url)
       const data = await response.json();
     } catch (error) {
+      setLoading(false)
       console.log(error);
       
     }
   }
+
+  useEffect(()=> {
+    fetchImages()
+  }, [])
   return <h2>stock photos starter</h2>
 } 
 
