@@ -11,7 +11,7 @@ function App() {
     url = `${mainUrl}? clientID=_NKtnwsrP0WzmXDdw_kQaplcDpXxad0YhAF097x0wwQ`;
     try {
       const response = await fetch(url)
-      const data = await 
+      const data = await response.json();
     } catch (error) {
       
     }
