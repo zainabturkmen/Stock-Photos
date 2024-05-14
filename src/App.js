@@ -6,6 +6,7 @@ const mainUrl = `https://api.unsplash.com/photos/`
 const searchUrl = `https://api.unsplash.com/search/photos/`
 
 function App() {
+  const 
   const fetchImages = async () => {
     let url;
     url = `${mainUrl}? clientID=_NKtnwsrP0WzmXDdw_kQaplcDpXxad0YhAF097x0wwQ`;
@@ -13,6 +14,7 @@ function App() {
       const response = await fetch(url)
       const data = await response.json();
     } catch (error) {
+      console.log(error);
       
     }
   }
