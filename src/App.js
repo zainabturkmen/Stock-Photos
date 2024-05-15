@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     const event = window.addEventListener("scroll", () => {
       if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
-        
+        console.log("it worked");
       }
     });
     return () => window.removeEventListener("scroll", event);
