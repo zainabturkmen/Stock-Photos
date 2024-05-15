@@ -29,7 +29,7 @@ function App() {
 
   useEffect(() => {
     const event = window.addEventListener("scroll", () => {
-      if ((window.innerHeight + window.scrollY) >= document.body) {
+      if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
         
       }
     });
