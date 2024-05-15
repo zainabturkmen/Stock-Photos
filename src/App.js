@@ -12,6 +12,7 @@ function App() {
   const [photos, setPhotos] = useState([]);
   const fetchImages = async () => {
     let url;
+    const urlpage = 
     url = `${mainUrl}${clientID}&page=3`;
     try {
       const response = await fetch(url);
