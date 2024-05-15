@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FaSearch } from "react-icons/fa";
 import Photo from "./Photo";
 
@@ -12,6 +12,7 @@ function App() {
   const [photos, setPhotos] = useState([]);
   const [page, setPage] = useState(1);
   const [query, setQuery] = useState("");
+  const mounted = useRef(false)
 
   const fetchImages = async () => {
     let url;
@@ -50,7 +51,11 @@ function App() {
 
 
   useEffect(() => {
+    if (mounted.current) {
+      mounted.current = true
+    }
     console.log("second");
+
   }, [])
 
   const handleSubmit = (e) => {
