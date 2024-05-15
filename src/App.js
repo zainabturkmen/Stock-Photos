@@ -26,7 +26,9 @@ function App() {
   useEffect(() => {
     fetchImages();
   }, []);
-  return <h2>stock photos starter</h2>;
+  return <main>
+    
+  </main>
 }
 
 export default App;
