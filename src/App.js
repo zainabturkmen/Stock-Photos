@@ -16,8 +16,8 @@ function App() {
     try {
       const response = await fetch(url);
       const data = await response.json();
-      setPhotos(data)
-      setLoading(false)
+      setPhotos(data);
+      setLoading(false);
     } catch (error) {
       setLoading(false);
     }
@@ -26,13 +26,24 @@ function App() {
   useEffect(() => {
     fetchImages();
   }, []);
-  return <main>
-    <section className="search">
-      <form className="search-form">
-        <input type="text" placeholder="search"  className="form-input"/>
-      </form>
-    </section>
-  </main>
+
+
+  const handleSubmit = () => {
+    
+  }
+
+  return (
+    <main>
+      <section className="search">
+        <form className="search-form">
+          <input type="text" placeholder="search" className="form-input" />
+          <button type="submit" className="submit-btn" onClick={handleSubmit}>
+            <FaSearch />
+          </button>
+        </form>
+      </section>
+    </main>
+  );
 }
 
 export default App;
