@@ -29,7 +29,7 @@ function App() {
   return <main>
     <section className="search">
       <form className="search-form">
-        <input type="text" />
+        <input type="text" placeholder="search" />
       </form>
     </section>
   </main>
