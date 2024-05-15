@@ -43,7 +43,11 @@ function App() {
           </button>
         </form>
       </section>
-      <section className="photos"></section>
+      <section className="photos">
+        <div className="photos-center">
+          {}
+        </div>
+      </section>
     </main>
   );
 }
