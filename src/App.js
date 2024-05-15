@@ -49,6 +49,8 @@ function App() {
   }, [page]);
 
 
+  useEffect(() => {}, [])
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setPage(1)
