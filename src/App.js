@@ -15,7 +15,7 @@ function App() {
   const fetchImages = async () => {
     let url;
     const urlPage = `&page=${page}`;
-    const 
+    const urlQuery = `&query=${query}`
     url = `${mainUrl}${clientID}${urlPage}`;
     try {
       const response = await fetch(url);
