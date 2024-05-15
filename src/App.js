@@ -45,7 +45,7 @@ function App() {
       </section>
       <section className="photos">
         <div className="photos-center">
-          {}
+          {photos.map}
         </div>
       </section>
     </main>
