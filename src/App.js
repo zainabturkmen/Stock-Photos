@@ -27,7 +27,9 @@ function App() {
     fetchImages();
   }, []);
   return <main>
-    
+    <section className="search">
+      <form className="search-form"></form>
+    </section>
   </main>
 }
 
