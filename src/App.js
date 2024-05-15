@@ -39,10 +39,11 @@ function App() {
           return [...oldPhotos, ...data];
         }
       });
-      setNewImages()
+      setNewImages(false);
       setLoading(false);
     } catch (error) {
       setLoading(false);
+      setNewImages(false);
     }
   };
 
@@ -56,12 +57,14 @@ function App() {
       mounted.current = true;
       return;
     }
-    console.log("second");
+    if (!newImages) return;
+    if (loading) return;
+    setPage((oldPage) => oldPage + 1);
   }, [newImages]);
 
   const event = () => {
     if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 2) {
-      setNewImages(true)
+      setNewImages(true);
     }
   };
 
