@@ -51,8 +51,9 @@ function App() {
 
 
   useEffect(() => {
-    if (mounted.current) {
+    if (!mounted.current) {
       mounted.current = true
+      return;
     }
     console.log("second");
 
