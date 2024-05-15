@@ -49,7 +49,9 @@ function App() {
   }, [page]);
 
 
-  useEffect(() => {}, [])
+  useEffect(() => {
+    console.log("second");
+  }, [])
 
   const handleSubmit = (e) => {
     e.preventDefault();
