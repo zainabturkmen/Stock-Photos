@@ -12,7 +12,7 @@ function App() {
   const [photos, setPhotos] = useState([]);
   const [page, setPage] = useState(1);
   const [query, setQuery] = useState("");
-  const mounted = useRef(false)
+  const mounted = useRef(false);
 
   const fetchImages = async () => {
     let url;
@@ -49,23 +49,22 @@ function App() {
     // eslint-disable-next-line
   }, [page]);
 
-
   useEffect(() => {
     if (!mounted.current) {
-      mounted.current = true
+      mounted.current = true;
       return;
     }
     console.log("second");
-
-  }, [])
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(!query) return
+    if (!query) return;
     if (page === 1) {
-      fetchImages(1)
+      fetchImages();
+      return;
     }
-    setPage(1)
+    setPage(1);
   };
 
   return (
