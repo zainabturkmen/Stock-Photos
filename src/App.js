@@ -19,7 +19,7 @@ function App() {
       const response = await fetch(url);
       const data = await response.json();
       setPhotos((oldPhotos) => {
-        
+        return [...oldPhotos, ...data]
       });
       setLoading(false);
     } catch (error) {
@@ -38,7 +38,8 @@ function App() {
           return oldPage  + 1
         })
       }
-    });
+    }, [page]);
+
     return () => window.removeEventListener("scroll", event);
   }, []);
 
