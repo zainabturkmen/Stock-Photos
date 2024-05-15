@@ -65,6 +65,7 @@ function App() {
     if (page === 1) {
       fetchImages(1)
     }
+    setPage(1)
   };
 
   return (
