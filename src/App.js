@@ -30,13 +30,11 @@ function App() {
 
       setPhotos((oldPhotos) => {
         if (query) {
-          return [...oldPhotos, ...data.results]
-        }
-        else{
-          return [...oldPhotos, ...data]
+          return [...oldPhotos, ...data.results];
+        } else {
+          return [...oldPhotos, ...data];
         }
       });
-
       setLoading(false);
     } catch (error) {
       setLoading(false);
