@@ -32,8 +32,8 @@ function App() {
   useEffect(() => {
     const event = window.addEventListener("scroll", () => {
       if (!loading && window.innerHeight + window.scrollY >= document.body.scrollHeight -2) {
-        setPage(() => {
-          
+        setPage((oldPage) => {
+          return oldPage  
         })
       }
     });
