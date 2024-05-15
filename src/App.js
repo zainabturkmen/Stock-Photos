@@ -22,6 +22,9 @@ function App() {
       if (query) {
         url = `${searchUrl}${clientID}${urlPage}${urlQuery}`
       }
+      else{
+        
+      }
 
 
     url = `${mainUrl}${clientID}${urlPage}`;
