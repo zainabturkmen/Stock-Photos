@@ -32,6 +32,9 @@ function App() {
         if (query) {
           return [...oldPhotos, ...data.results]
         }
+        else{
+          
+        }
       });
 
       setLoading(false);
