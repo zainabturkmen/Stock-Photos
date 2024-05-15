@@ -20,7 +20,7 @@ function App() {
     const urlQuery = `&query=${query}`
 
       if (query) {
-        url = `${searchUrl}${clientID}${urlPage}`
+        url = `${searchUrl}${clientID}${urlPage}${}`
       }
 
 
