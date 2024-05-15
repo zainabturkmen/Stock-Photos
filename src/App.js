@@ -31,7 +31,7 @@ function App() {
     const event = window.addEventListener("scroll", ()=> {
       console.log(`innerHeight ${window.innerHeight}`);
       console.log(`scrollY ${window.scrollY}`);
-      console.log(`body height ${document.body.}`);
+      console.log(`body height ${document.body.scroll}`);
     });
     return () => window.removeEventListener("scroll", event)
   }, [])
