@@ -27,20 +27,19 @@ function App() {
     fetchImages();
   }, []);
 
-  useEffect(()=> {
-    const event = window.addEventListener("scroll", ()=> {
+  useEffect(() => {
+    const event = window.addEventListener("scroll", () => {
       console.log(`innerHeight ${window.innerHeight}`);
       console.log(`scrollY ${window.scrollY}`);
       console.log(`body height ${document.body.scrollHeight}`);
     });
-    return () => window.removeEventListener("scroll", event)
-  }, [])
-
+    return () => window.removeEventListener("scroll", event);
+  }, []);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     console.log("hey");
-  }
+  };
 
   return (
     <main>
@@ -54,8 +53,8 @@ function App() {
       </section>
       <section className="photos">
         <div className="photos-center">
-          {photos.map((image, index)=> {
-            return <Photo key={image.id} {...image} />
+          {photos.map((image, index) => {
+            return <Photo key={image.id} {...image} />;
           })}
         </div>
         {loading && <h2 className="loading">Loading...</h2>}
