@@ -12,10 +12,18 @@ function App() {
   const [photos, setPhotos] = useState([]);
   const [page, setPage] = useState(1);
   const [query, setQuery] = useState("")
+
+
   const fetchImages = async () => {
     let url;
     const urlPage = `&page=${page}`;
     const urlQuery = `&query=${query}`
+
+      if (query) {
+        url = `${searchUrl}$`
+      }
+
+
     url = `${mainUrl}${clientID}${urlPage}`;
     try {
       const response = await fetch(url);
