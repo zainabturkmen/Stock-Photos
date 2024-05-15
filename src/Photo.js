@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Photo = () => {
-  return <h2>photo component</h2>
+const Photo = ({urls:{regular}}) => {
+  return <article></article>
 }
 
 export default Photo;
