@@ -63,7 +63,7 @@ function App() {
     e.preventDefault();
     if(!query) return
     if (page === 1) {
-      
+      fetchImages(1)
     }
   };
 
