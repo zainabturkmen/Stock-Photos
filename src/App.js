@@ -10,6 +10,7 @@ const searchUrl = `https://api.unsplash.com/search/photos/`;
 function App() {
   const [loading, setLoading] = useState(false);
   const [photos, setPhotos] = useState([]);
+  const [page, setPage] = useState()
   const fetchImages = async () => {
     let url;
     const urlpage = `&page=${page}`
