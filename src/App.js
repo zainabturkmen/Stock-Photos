@@ -29,8 +29,9 @@ function App() {
       const data = await response.json();
 
       setPhotos((oldPhotos) => {
+        
       });
-      
+
       setLoading(false);
     } catch (error) {
       setLoading(false);
