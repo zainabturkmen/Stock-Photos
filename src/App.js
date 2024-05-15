@@ -33,7 +33,7 @@ function App() {
           return [...oldPhotos, ...data.results]
         }
         else{
-          
+          return [...oldPhotos, ...data]
         }
       });
 
