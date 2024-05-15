@@ -32,7 +32,9 @@ function App() {
   useEffect(() => {
     const event = window.addEventListener("scroll", () => {
       if (!loading && window.innerHeight + window.scrollY >= document.body.scrollHeight -2) {
-        console.log("it worked");
+        setPage(() => {
+          
+        })
       }
     });
     return () => window.removeEventListener("scroll", event);
