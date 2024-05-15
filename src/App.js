@@ -28,7 +28,8 @@ function App() {
   }, []);
 
   useEffect(()=> {
-    const event = window.addEventListener("scroll", ()=> {})
+    const event = window.addEventListener("scroll", ()=> {});
+    return () => window.removeEventListener("scroll", event)
   }, [])
 
 
