@@ -61,7 +61,10 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setPage(1)
+    if(!query) return
+    if (page === 1) {
+      
+    }
   };
 
   return (
