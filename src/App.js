@@ -28,8 +28,8 @@ function App() {
   }, []);
 
 
-  const handleSubmit = () => {
-    
+  const handleSubmit = (e) => {
+    e.preventDefault()
   }
 
   return (
