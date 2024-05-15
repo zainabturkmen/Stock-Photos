@@ -27,6 +27,10 @@ function App() {
     fetchImages();
   }, []);
 
+  useEffect(()=> {
+    
+  }, [])
+
 
   const handleSubmit = (e) => {
     e.preventDefault()
