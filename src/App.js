@@ -29,7 +29,9 @@ function App() {
       const data = await response.json();
 
       setPhotos((oldPhotos) => {
-        
+        if (query) {
+          
+        }
       });
 
       setLoading(false);
