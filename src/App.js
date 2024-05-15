@@ -23,11 +23,10 @@ function App() {
         url = `${searchUrl}${clientID}${urlPage}${urlQuery}`
       }
       else{
-        
+        url = `${mainUrl}${clientID}${urlPage}`;
       }
 
 
-    url = `${mainUrl}${clientID}${urlPage}`;
     try {
       const response = await fetch(url);
       const data = await response.json();
