@@ -33,7 +33,7 @@ function App() {
     const event = window.addEventListener("scroll", () => {
       if (!loading && window.innerHeight + window.scrollY >= document.body.scrollHeight -2) {
         setPage((oldPage) => {
-          return oldPage  
+          return oldPage  + 1
         })
       }
     });
