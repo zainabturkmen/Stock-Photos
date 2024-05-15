@@ -13,8 +13,8 @@ function App() {
   const [page, setPage] = useState(1)
   const fetchImages = async () => {
     let url;
-    const urlpage = `&page=${page}`
-    url = `${mainUrl}${clientID}${urlpage}`;
+    const urlPage = `&page=${page}`
+    url = `${mainUrl}${clientID}${urlPage}`;
     try {
       const response = await fetch(url);
       const data = await response.json();
@@ -27,7 +27,7 @@ function App() {
 
   useEffect(() => {
     fetchImages();
-  }, []);
+  }, [page]);
 
   useEffect(() => {
     const event = window.addEventListener("scroll", () => {
