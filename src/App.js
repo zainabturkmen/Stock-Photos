@@ -28,7 +28,9 @@ function App() {
   }, []);
   return <main>
     <section className="search">
-      <form className="search-form"></form>
+      <form className="search-form">
+        <input type="text" />
+      </form>
     </section>
   </main>
 }
