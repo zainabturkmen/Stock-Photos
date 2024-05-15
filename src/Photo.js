@@ -1,8 +1,8 @@
 import React from 'react'
 
 const Photo = ({urls:{regular}}) => {
-  return <article>
-    
+  return <article className='photo'>
+
   </article>
 }
 
