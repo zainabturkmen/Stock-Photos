@@ -29,7 +29,7 @@ function App() {
 
   useEffect(()=> {
     const event = window.addEventListener("scroll", ()=> {
-      console.log(`innerHeight`);
+      console.log(`innerHeight ${window}`);
     });
     return () => window.removeEventListener("scroll", event)
   }, [])
